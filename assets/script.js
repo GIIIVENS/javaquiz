@@ -12,7 +12,7 @@ let   questionOrdr, questionUserIsOn
 
 
 start.addEventListener('click',quizBegin)
-
+welcome.addEventListener('click', quizBegin)
 // function textToggle (){ 
 //     var
 
