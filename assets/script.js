@@ -1,9 +1,9 @@
 
 
 const start = document.getElementById('start-btn')
-const welcome = document.getElementsById('#pto')
+let welcome = document.getElementById('welcome')
 const options = document.getElementById('question-box')
-let question = document.getElementById('#questions')
+const question = document.getElementById('#questions')
 let answer = document.getElementById('#answers-btn') 
 let   questionOrdr, questionUserIsOn
 
@@ -12,11 +12,17 @@ let   questionOrdr, questionUserIsOn
 
 
 start.addEventListener('click',quizBegin)
-welcome.addEventListener('click', quizBegin)
-// function textToggle (){ 
-//     var
 
-// }s 
+function instructionToggle (){
+    var welcome = document.getElementById('welcome')
+    if (welcome.style.display ==="block") {
+        welcome.style.display = "none";
+    } else {
+       welcome.style.display= 'block';
+    }
+
+}
+// function textToggle 
 
 function quizBegin() {
     console.log('quizStart')
@@ -47,7 +53,7 @@ function presentQuestion (question) {
     });
 }
 
-const quizquestion = [
+const quizQuestion = [
     { question: 'Which of the following is NOT a JavaScript data type? ',
         answers: [
             { Text: 'object', correct: false},
