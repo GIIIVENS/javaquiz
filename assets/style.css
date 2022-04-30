@@ -1,0 +1,119 @@
+*, *::before, *::after {
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif
+
+
+}
+
+body {
+    background: rgb(94,102,255);
+    background: radial-gradient(circle, rgba(94,102,255,1) 9%, rgba(148,187,233,1) 100%);
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.largebox {
+    background: rgb(255,255,255);
+    width: 500px;
+    max-width: 70%;
+    border-radius: 20px;
+    padding: 50px;
+
+}   
+
+/* labling to remember and keep a visual idea of the page-  largest context box  */
+
+.box-bnts {
+  display: grid;
+  margin: 10px;
+  grid-auto-columns: 90%;
+  gap: 15px;
+}
+/*  found  cool button design on the  css scan site  to insert- insert begins here  */
+.bqb {
+ 
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+
+.bqb:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.bqb:hover:after {
+  transform: translate(0, 0);
+}
+
+.bqb:active {
+  background-color:rgb(240, 240, 255);
+  outline: 0;
+}
+
+.bqb:hover {
+  outline: 0;
+}
+
+
+/* insert- modified insert ends here  */ 
+
+
+
+.start-btn {
+    display: flex;
+    font-weight: bolder;
+    font-size: larger;
+ 
+}
+
+.hide {
+    display: none;
+} 
+
+/* start button toogle off once the quiz begins */
+
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
+
+/* insert ends here  */
+
